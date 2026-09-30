@@ -1,0 +1,354 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#navigation{
+  background-color:dodgerblue ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+#navigation > ul{
+display: flex;
+margin-right: 50px;
+}
+
+#navigation > ul >li{
+  list-style: none;
+  margin: 5px 0px;
+  margin-left: -10px;
+  padding: 10px 5px;
+}
+
+
+#navigation > ul > li > a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border-right: 1px solid white;
+  padding:15px 18px;
+}
+#navigation > ul > li:first-child >a{
+  border-left: 1px solid white;
+}
+#navigation >ul > li:hover > a{
+  background-color: black;
+}
+.logo > h2{
+  color: white;
+  margin-left: 50px;
+  font-size: 30px;
+}
+.logofirstlatter{
+  color: red;
+}
+  
+.dropdownmenu {
+  background-color: dodgerblue;
+  opacity: 0;
+  text-align: center;
+  width: 170px;
+  margin-top: 15px;
+  position: absolute;
+  transition: 0.5s;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin:top ;
+  box-shadow: 10px 8px black;
+}
+.dropdownmenu>li{
+  list-style: none;
+   padding: 10px 0;
+   border-bottom: 1px solid white;
+}
+.dropdownmenu >li:hover{
+  background-color: rgb(184, 24, 24);
+}
+.dropdownmenu > li > a{
+  text-decoration: none;
+  color: white;
+}
+.dropdownmenu > li:first-child{
+  border-top: 1px solid white;
+}
+#navigation > ul> li:hover > .dropdownmenu{
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+#main-header{
+  background-image: url("image/web.jpg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 90vh;
+  
+}
+
+.header-container{
+  padding-top: 100px;
+}
+
+.header-container>h1{
+  background-color: rgba(15, 102, 190, 0.268);
+  width: 250px;
+  margin : 20px auto;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.993);
+  padding: 10px 7px;
+  border-radius: 15px;
+}
+
+.header-container> h4{
+  font-size: 20px;
+  color: rgb(19, 90, 161);
+}
+
+.header-container> h5{
+  font-size: 20px;
+  color: rgb(30, 158, 255);
+}
+
+
+.header-container > button{
+  background-color: rgb(14, 103, 192);
+  font-size: 15px;
+  padding: 10px 5px;
+  border: 3px solid rgb(128, 0, 81);
+  color: white;
+  border-radius: 20px 10px 20px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header-container>button:hover{
+  background-color:rgba(30, 143, 255, 0.004) ;
+}
+.socilaicon > a{
+  display: inline-block; 
+  text-align: center;
+  background-color: rgba(0, 0, 255, 0.122);
+  color: white;
+  margin: 10px 3px;
+  text-decoration: none;
+  font-size: 20px; 
+  padding: 5px; 
+  border: 2px solid wheat;
+  border-radius: 50%;
+  transition: 0.5s;
+
+}
+.socilaicon > a:hover{
+  background-color: dodgerblue;
+  border: 2px solid green;
+  transform: rotate(360deg);
+}
+/* first-section code start here  */
+
+#first-section{
+  background-color: lightgray;
+}
+
+#first-container{
+  justify-content:space-between ;
+  width:1000px;
+  margin: auto;
+  display: flex;
+  padding:  100px 0;
+  
+}
+
+.learn-programming{
+  width: 300px;
+  text-align: center;
+  padding: 15px 0;
+  transition: 0.5s;
+  
+}
+.learn-programming> h2{
+  margin: 15px 0;
+   
+}
+.learn-programming:hover{
+  box-shadow: 3px 3px 10px gray;
+}
+.learn-programming> i{
+  font-size: 30px;
+}
+
+
+
+  /* second section code start here  */
+
+
+#smatarea-title{
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+
+#smatarea-title >h2::before {
+    content: "";
+    width: 87px;
+    height: 5px;
+    background-color: red;
+    top: 50px;
+    left: 715px;
+    position: absolute;
+}
+
+.smart-area{
+  display: flex;
+  width: 1000px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.smart-area-text{ 
+  width: 500px;
+  
+}
+.smart-area-text > a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: red;
+  font-size: 30px;
+  color: white;
+  padding: 15px 20px;
+  margin:20px 0 ;
+  border-radius: 15px;
+}
+.smart-area-text >h4{
+  color: red;
+}
+.smart-area-text > h2{
+  margin: 20px 0;
+}
+.smart-area-text> a:hover{
+  background-color: rgba(100, 80, 80, 0.995);
+  
+} 
+/* third section */
+#services-section{
+  background-color: aliceblue;
+}
+
+.service-area-title{
+  text-align: center;
+  padding: 40px 0 60px;
+}
+.service-area-title >h2{
+  font-size: 40px;
+}
+.services-area{
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 80px;
+}
+.services-area-parent{
+  display:grid ;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:20px;
+}
+
+.each-area{
+ background-color: lightblue;
+ text-align: center;
+ padding: 15px 15px;
+ transition:0,5s ;
+}
+
+.each-area> h3{
+ margin: 15px;
+}
+.each-area:hover{
+  /* background-color: rgb(209, 229, 235); */
+}
+
+ /* fourth section start here  */
+
+ #pricing-area-container{
+  width: 1000px;
+  margin: auto;
+ }
+ .pricing-area-parent{
+  display: flex;
+  justify-content: space-between;
+ }
+ .pricing-area-title{
+  text-align: center;
+  margin: 50px;
+ }
+ .pricing-area-title> h2{
+  font-size: 50px;
+ }
+ .sigle-card-img{
+  width: 310px;
+  
+ }
+ .sigle-card-img>img{
+  max-width: 100%;
+ }
+ .single-card{
+  width: 310px;
+  text-align: center;
+
+ }
+ .single-card>h3{
+  font-size: 25px;
+  margin: 15px 0;
+ }
+ .month-pricing{
+  border-top:1px dashed grey ;
+  border-bottom: 1px dashed grey;
+  margin: 15px 0;
+  padding: 5px 10px;
+ }
+ .month-pricing > .month-pricing-span1{
+  font-size: 35px;
+ } 
+.month-pricing>  .month-pricing-span1{
+  color: grey;
+ }
+
+ .single-card > button{
+  background-color: rgb(200, 14, 14);
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  
+ }
+
+ .single-card > button:hover{
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+ }
+
+ .single-card > a{
+  text-decoration: none;
+  margin: 20px ;
+  display: inline-block;
+ }
+ .single-card{
+  box-shadow: 5px 5px 10px black;
+  # dhyr-rty{
+  margin-bottom: 50px ;
+  }
+ }
+  /* tesmonial */
+ 
+ #photo-png>img{
+  background-color: rgb(165, 25, 25);
+ }
+
+
+
+
+  
+
